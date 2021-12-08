@@ -1,6 +1,7 @@
 Name:           gnome-text-editor
 Version:        41.1
-Release:        0
+Release:        1
+Group:		Editors
 Summary:        GNOME Text Editor
 License:        GPL-3.0-or-later
 URL:            https://gitlab.gnome.org/GNOME/gnome-text-editor
@@ -9,10 +10,10 @@ Source:         https://download.gnome.org/sources/%{name}/41/%{name}-%{version}
 BuildRequires:  itstool
 BuildRequires:  meson
 BuildRequires:  pkgconfig
-BuildRequires:  pkgconfig(enchant-2) >= 2.2.0
-BuildRequires:  pkgconfig(gio-unix-2.0) >= 2.69
-BuildRequires:  pkgconfig(gtk4) >= 4.3
-BuildRequires:  pkgconfig(gtksourceview-5) >= 5.1.1
+BuildRequires:  pkgconfig(enchant-2)
+BuildRequires:  pkgconfig(gio-unix-2.0)
+BuildRequires:  pkgconfig(gtk4)
+BuildRequires:  pkgconfig(gtksourceview-5)
 BuildRequires:  pkgconfig(icu-uc)
 BuildRequires:  pkgconfig(libadwaita-1)
 
@@ -29,15 +30,14 @@ you've never saved it to a file.
 
 %build
 %meson \
-	-Ddevelopment=false \
-	%{nil}
+	-Ddevelopment=false
 %meson_build
 
 %install
 %meson_install
 %find_lang %{name} %{?no_lang_C}
 
-%files
+%files -f %{name}.lang
 %license COPYING
 %doc NEWS README.md
 %doc %{_datadir}/help/C/%{name}/
@@ -47,5 +47,3 @@ you've never saved it to a file.
 %{_datadir}/dbus-1/services/org.gnome.TextEditor.service
 %{_datadir}/glib-2.0/schemas/org.gnome.TextEditor.gschema.xml
 %{_datadir}/icons/hicolor/*/*/*.svg
-
-%files lang -f %{name}.lang
