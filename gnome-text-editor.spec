@@ -7,6 +7,7 @@ License:        GPL-3.0-or-later
 URL:            https://gitlab.gnome.org/GNOME/gnome-text-editor
 Source:         https://download.gnome.org/sources/%{name}/41/%{name}-%{version}.tar.xz
 
+BuildRequires:	appstream-util
 BuildRequires:  itstool
 BuildRequires:  meson
 BuildRequires:  pkgconfig
@@ -16,6 +17,7 @@ BuildRequires:  pkgconfig(gtk4)
 BuildRequires:  pkgconfig(gtksourceview-5)
 BuildRequires:  pkgconfig(icu-uc)
 BuildRequires:  pkgconfig(libadwaita-1)
+BuildRequires:	pkgconfig(libpcre2-8)
 
 %description
 Text Editor is a simple text editor that focus on session
@@ -40,7 +42,7 @@ you've never saved it to a file.
 %files -f %{name}.lang
 %license COPYING
 %doc NEWS README.md
-%doc %{_datadir}/help/C/%{name}/
+%doc %{_datadir}/help/*/%{name}/
 %{_bindir}/gnome-text-editor
 %{_datadir}/appdata/org.gnome.TextEditor.appdata.xml
 %{_datadir}/applications/org.gnome.TextEditor.desktop
