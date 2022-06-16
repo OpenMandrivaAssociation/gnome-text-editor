@@ -44,7 +44,7 @@ you've never saved it to a file.
 %doc NEWS README.md
 %doc %{_datadir}/help/*/%{name}/
 %{_bindir}/gnome-text-editor
-%{_datadir}/appdata/org.gnome.TextEditor.appdata.xml
+#{_datadir}/appdata/org.gnome.TextEditor.appdata.xml
 %{_datadir}/applications/org.gnome.TextEditor.desktop
 %{_datadir}/dbus-1/services/org.gnome.TextEditor.service
 %{_datadir}/glib-2.0/schemas/org.gnome.TextEditor.gschema.xml
