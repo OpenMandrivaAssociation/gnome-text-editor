@@ -18,6 +18,7 @@ BuildRequires:  pkgconfig(gtksourceview-5)
 BuildRequires:  pkgconfig(icu-uc)
 BuildRequires:  pkgconfig(libadwaita-1)
 BuildRequires:	pkgconfig(libpcre2-8)
+BuildRequires:	pkgconfig(editorconfig)
 
 %description
 Text Editor is a simple text editor that focus on session
