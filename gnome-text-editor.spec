@@ -19,6 +19,7 @@ BuildRequires:  pkgconfig(gtksourceview-5)
 BuildRequires:  pkgconfig(icu-uc)
 BuildRequires:  pkgconfig(libadwaita-1)
 BuildRequires:	pkgconfig(libpcre2-8)
+BuildRequires:	pkgconfig(libspelling-1)
 BuildRequires:	pkgconfig(editorconfig)
 
 %description
