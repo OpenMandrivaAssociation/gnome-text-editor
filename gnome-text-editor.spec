@@ -1,5 +1,5 @@
 Name:           gnome-text-editor
-Version:        47.0
+Version:        47.1
 Release:        1
 Group:		Editors/GNOME
 Summary:        GNOME Text Editor
