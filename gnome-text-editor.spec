@@ -12,6 +12,7 @@ BuildRequires:	gettext
 BuildRequires:  itstool
 BuildRequires:  meson
 BuildRequires:  pkgconfig
+BuildRequires:	desktop-file-utils
 BuildRequires:  pkgconfig(enchant-2)
 BuildRequires:  pkgconfig(gio-unix-2.0)
 BuildRequires:  pkgconfig(gtk4)
