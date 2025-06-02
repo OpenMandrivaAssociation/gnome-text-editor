@@ -1,5 +1,5 @@
 Name:           gnome-text-editor
-Version:        48.2
+Version:        48.3
 Release:        1
 Group:		Editors/GNOME
 Summary:        GNOME Text Editor
@@ -12,6 +12,7 @@ BuildRequires:	gettext
 BuildRequires:  itstool
 BuildRequires:  meson
 BuildRequires:  pkgconfig
+BuildRequires:	desktop-file-utils
 BuildRequires:  pkgconfig(enchant-2)
 BuildRequires:  pkgconfig(gio-unix-2.0)
 BuildRequires:  pkgconfig(gtk4)
