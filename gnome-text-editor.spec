@@ -1,6 +1,6 @@
 Name:           gnome-text-editor
 Version:        50.1
-Release:        2
+Release:        3
 Group:		Editors/GNOME
 Summary:        GNOME Text Editor
 License:        GPL-3.0-or-later
